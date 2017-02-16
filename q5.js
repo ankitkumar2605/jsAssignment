@@ -37,7 +37,7 @@ for(var j in obj) {
 document.write("<b>"+"Salaries after increment"+"<br>"+"</b>");
 for (var i = 0; i < Employees.length; i++)
  {
-      if(Employees[i].salary > 1000 && Employees[i].age >20)
+      if(Employees[i].salary < 1000 && Employees[i].age >20)
           Employees[i].salary=Employees[i].salary*5;
 
 
