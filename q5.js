@@ -17,13 +17,7 @@ for (var i = 0; i < Employees.length; i++)
            document.write("Dob:"+Employees[i].dob+"<br><br>");
 
   }
-document.write("<b>"+"Employees with salary greater thn 5000"+"<br>"+"</b>");
- for (var i = 0; i < Employees.length; i++)
-  {
-       if(Employees[i].salary > 5000)
-            document.write(Employees[i].Name+"<br>");
 
-   }
 
    var obj = { };
    for (var i = 0, j = Employees.length; i < j; i++) {
@@ -53,5 +47,10 @@ for (var i = 0; i < Employees.length; i++)
     }
 
 
+var emps=Employees.filter(function (emp){
+	return emp.salary > 5000;
+});
+    console.log("Employees having salary greater than 5000");
+    console.log(emps);
 
 }());
